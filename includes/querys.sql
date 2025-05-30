@@ -1,0 +1,5 @@
+CREATE TABLE IF NOT EXISTS singleton (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  name VARCHAR(60),
+  price DOUBLE(5,2)
+);
