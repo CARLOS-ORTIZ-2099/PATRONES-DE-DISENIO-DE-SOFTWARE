@@ -1,5 +1,10 @@
 <?php
 
+// Aplicando el simple Factory 
+/* La diferencia es que aqui no tenemos subclases, solamente una serie de
+   condicionales que según el valor del parametro se crea uno u otro objeto
+*/
+
 // definiendo el producto 
 interface DocumentInterface
 {
