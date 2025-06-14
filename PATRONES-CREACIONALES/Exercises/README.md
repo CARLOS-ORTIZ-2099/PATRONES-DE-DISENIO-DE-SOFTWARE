@@ -38,3 +38,35 @@ Conclusión: ✔ El Singleton en este ejercicio debe encargarse de almacenar par
 - Formato de salida → Permitir exportar el documento como texto, HTML o PDF.
 
 📌 Lo que se espera del ejercicio: ✔ Separar la construcción del documento de su representación final. ✔ Permitir crear distintos documentos sin modificar la lógica base. ✔ Asegurar que cada paso de construcción sea claro y flexible.
+
+## Implementar Factory Method en la Gestión de Vehículos de Alquiler
+
+Objetivo: Implementar una fábrica de vehículos donde el sistema pueda instanciar distintos tipos de vehículos sin depender directamente de sus clases concretas.
+
+📌 Lo que debes hacer:
+
+- Definir una interfaz VehiculoInterface con métodos getTipo() y getDescripcion().
+- Crear una fábrica abstracta FactoryVehiculo, con el método createVehiculo().
+- Implementar fábricas concretas FactoryAuto, FactoryMoto, FactoryCamion, cada una generando su propio tipo de vehículo.
+- El cliente debe poder solicitar vehículos sin conocer su implementación interna.
+- Verificar que se puedan agregar más tipos de vehículos sin modificar el código base.
+
+📌 Desafío adicional: ✅
+
+- ¿Qué pasa si en el futuro necesitas vehículos eléctricos?
+- ¿Cómo adaptar Factory Method sin modificar la lógica de creación?
+
+## Implementar Prototype en un Sistema de Clonación de Jugadores de Fútbol
+
+Objetivo: Desarrollar un sistema que permita clonar jugadores ya configurados, evitando repetir su configuración inicial.
+
+📌 Lo que debes hacer:
+
+- Definir una clase Jugador, con atributos como nombre, edad, equipo y posición.
+- Implementar \_\_clone() para que los jugadores clonados no compartan referencias con el original.
+- Crear una lista de jugadores y clonar varios para cambiar su equipo y posición.
+- Comprobar que las instancias clonadas son independientes en memoria del original.
+
+📌 Desafío adicional: ✅
+
+- ¿Cómo manejar jugadores con historial de equipos sin compartir referencias entre clones?
