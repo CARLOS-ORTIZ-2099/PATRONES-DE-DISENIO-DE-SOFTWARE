@@ -1,0 +1,19 @@
+{
+  "name": "carlos/app",
+  "autoload": {
+    "psr-4": {
+      "Carlos\\App\\": "src/",
+      "App\\interfaces\\": "src/exercise-03/interfaces/"
+    }
+  },
+  "authors": [
+    {
+      "name": "Carlos Eduardo Ortiz",
+      "email": "carlosklinton.2016@gmail.com"
+    }
+  ],
+  "require": {
+    "stripe/stripe-php": "^17.3",
+    "vlucas/phpdotenv": "^5.6"
+  }
+}
