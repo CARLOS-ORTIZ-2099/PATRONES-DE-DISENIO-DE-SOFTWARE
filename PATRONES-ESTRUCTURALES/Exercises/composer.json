@@ -5,7 +5,8 @@
       "Carlos\\App\\": "src/",
       "App\\interfaces\\": "src/exercise-03/interfaces/",
       "exercise\\interfaces\\": "src/exercise-04/interfaces/",
-      "exercise\\abstracts\\": "src/exercise-04/abstracts/"
+      "exercise\\abstracts\\": "src/exercise-04/abstracts/",
+      "exercise_05\\interfaces\\": "src/exercise-05/interfaces/"
     }
   },
   "authors": [

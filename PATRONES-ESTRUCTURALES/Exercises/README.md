@@ -104,3 +104,23 @@ $gestor->buscar("manual.pdf");
 - Implementá una exportación en JSON usando el Facade.
 
 - Usá recursión internamente pero mantené la API del Facade limpia y amigable.
+
+## Gestión de Documentos Sensibles con Proxy
+
+### 📌 Contexto del ejercicio:
+
+Estás desarrollando un sistema interno de gestión documental para tu ERP. Algunos documentos son sensibles (por ejemplo, contratos confidenciales, reportes de gastos o archivos contables) y deben ser accesibles solo por ciertos perfiles de usuario (ej. “admin”).
+
+Además, cargar estos archivos es costoso (pesados o externos), así que quieres que el archivo se cargue solo cuando se lo necesite verdaderamente.
+
+### 🎯 ¿Qué patrones usar?
+
+Proxy de acceso: controla permisos de lectura según el rol del usuario.
+
+Proxy de carga diferida: no carga el contenido hasta que se solicite explícitamente (lazy load).
+
+### El ProxyDocumento debería controlar internamente:
+
+- Si el usuario puede acceder (por rol)
+
+- Si el documento ya fue cargado o no (simular carga costosa)
